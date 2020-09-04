@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Lato", "Open Sans";
+}
+
+.container {
+  width: 100%;
+}
+.container h1 {
+  text-align: center;
+}
+
+.item-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.item {
+  width: 22%;
+  text-align: center;
+  word-break: keep-all;
+  margin: 3% 0;
+}
+
+.item .img img {
+  width: 100%;
+}
+.item .name a,
+.price {
+  color: black;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.item .price span {
+  display: block;
+}
+.item .price span:first-child {
+  text-decoration: line-through;
+}
+.item .price span:nth-child(2) {
+  font-weight: bold;
+}
+
+.item .etc img {
+  height: 13px;
+  margin: 3px;
+}
+
+.item .color {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item .color div {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  margin: 2px;
+}
+
+/*
+.container {
+  width: 100%;
+}
+.container .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(221, 247, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.container .loading img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.container .album-container {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.container .album-container > h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(92, 92, 92);
+  font-family: "Open Sans";
+}
+
+.container .album-container ul li {
+  width: 100%;
+  margin: 60px 0;
+  background: rgb(241, 241, 241);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 5px rgba(160, 160, 160, 0.461);
+}
+
+.container .album-container ul li .img-container a {
+  width: 100%;
+  display: block;
+}
+
+.container .album-container ul li .img-container img {
+  width: 100%;
+  display: block;
+}
+
+.container .album-container ul li .data-container {
+  text-align: center;
+}
+
+.container .album-container ul li .data-container a {
+  color: rgb(73, 73, 73);
+}
+
+.container .album-container ul li .data-container h2 {
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.container .album-container ul li .data-container p {
+  font-weight: 400;
+
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .container .album-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+*/

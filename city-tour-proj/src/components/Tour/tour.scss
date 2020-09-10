@@ -1,0 +1,85 @@
+@import "../../index.scss";
+article {
+  width: 90%;
+  overflow: hidden;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 35% 1fr 5px;
+  grid-column-gap: 15px;
+  align-items: center;
+  position: relative;
+  background: $mainWhite;
+  border-radius: 10px;
+}
+
+article img {
+  width: 100%;
+}
+
+article .description {
+  color: $mainBlack;
+  h2 {
+    font-size: 15px;
+    color: $mainGreen;
+    margin: 2% 0;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 2% 0;
+    text-transform: capitalize;
+  }
+  .more {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    i {
+      font-size: 10px;
+    }
+  }
+  p {
+    font-size: 15px;
+    margin: 2% 0;
+  }
+}
+
+article .delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
+  color: $mainGreen;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: $mainTransition;
+}
+
+article:hover .delete {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    width: 90%;
+    overflow: hidden;
+    margin: 5%;
+    display: block;
+    position: relative;
+    background: $mainWhite;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  article .description {
+    margin: 0 15px;
+  }
+
+  article .delete {
+    top: 10px;
+    right: 13px;
+    font-size: 20px;
+  }
+}
